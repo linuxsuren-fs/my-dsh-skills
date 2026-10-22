@@ -21,6 +21,9 @@
 | [`skill-refresh`](skill-refresh/SKILL.md) | 技能库保鲜：按周期（state.md 配置）调研工具/语言最佳实践，生成带来源的更新提案，研发确认后才修改与提交。 |
 | [`subagent-parallel-dev`](subagent-parallel-dev/SKILL.md) | 多子代理并行开发大型跨仓库任务：契约先行、早期契约审查、独立复测纪律（实跑复核+stash/纯净worktree对照证实既有失败）、真实服务E2E兜底、有进展才提交。提炼自 6 仓库 7 子代理实战。 |
 | [`redis-stream-rpc`](redis-stream-rpc/SKILL.md) | Redis Streams 版 RPC 总线：注册/心跳/命令/回执流布局、entry 双编码、幂等键、PEL 回收(XAUTOCLAIM)、权重优先窗口仲裁、令牌随流下发与恢复重派。与 mqtt-device-gateway-dev 互补。 |
+| [`jenkins-pipeline-dev`](jenkins-pipeline-dev/SKILL.md) | Jenkins 声明式流水线（Groovy/sh 混编）实战陷阱：sh 步骤变量转义三定律、私有镜像仓库登录前置、多架构 buildx 镜像与 manifest 直拷同步、构建矩阵文件化与推送后架构校验。源自部署工具 CI 全链路踩坑。 |
+| [`docker-edge-ops-pitfalls`](docker-edge-ops-pitfalls/SKILL.md) | 边缘机 docker 守护进程与容器出网运维陷阱：iptables:false 导致容器出不了公网的诊断与双路径修复、enable --now 不重启已运行服务、scratch 镜像 docker create 要求、Client/Server 版本错位、离线自包含物料的修复传播链、连通性探测分类法。源自 Jetson 边缘设备实测故障。 |
+| [`windows-repo-tooling-pitfalls`](windows-repo-tooling-pitfalls/SKILL.md) | Windows 仓库工具链陷阱：无 BOM 中文 ps1 被 PowerShell 5.1 按 GBK 误读、go:embed 前端产物必须入库的 gitignore 例外、全局文本替换式迁移的误伤面排查、WSL bash 与 git-bash 的 PATH 之争、DNS 污染应对。 |
 | [`skill-distillation`](skill-distillation/SKILL.md) | 任务后经验沉淀：复杂/高难度/耗时长的任务完成后总结可复用经验，区分通用技能与项目级技能，经研发确认后写入对应仓库。 |
 | [`robot-cameras`](robot-cameras/SKILL.md) | 机器人（机器狗等）与网络摄像机（IPC）RTSP 取流速查与探测：智身科技 M1、宇泛灵猫 Cyvet、海康（实测通道ID规则）/大华/宇视/水星/TP-LINK/雄迈品牌格式、宇树 Go 系列机载网络；含新型号 ffprobe/ffplay 探测接入流程。 |
 | [`installer-bundle-design`](installer-bundle-design/SKILL.md) | 安装包设计方法论：清单驱动（manifest 自描述、字段只增不改）、单一产物与编排收敛/按 profile 裁剪、白名单自动收集编排引用、在线/离线双模同源版本语义、对外端口全参数化。适用于任何打包→目标机安装类交付工具。 |
